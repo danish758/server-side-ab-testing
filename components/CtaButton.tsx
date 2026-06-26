@@ -52,7 +52,7 @@ export default function CtaButton({
       }
     >
       {text}
-      {clicked && <span className="ml-2 text-indigo-100"> <Check /> </span>}
+      {clicked && <Check className="ml-2 h-4 w-4" aria-hidden />}
     </button>
   );
 }

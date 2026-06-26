@@ -1,3 +1,4 @@
+import { ArrowRight } from "lucide-react";
 import CtaButton from "./CtaButton";
 
 interface HeroProps {
@@ -36,9 +37,10 @@ export default function Hero({ ctaText, userId, variationId }: HeroProps) {
           <CtaButton text={ctaText} userId={userId} variationId={variationId} />
           <a
             href="#features"
-            className="text-base font-semibold text-slate-700 transition hover:text-slate-900"
+            className="inline-flex items-center gap-1 text-base font-semibold text-slate-700 transition hover:text-slate-900"
           >
-            See how it works <span aria-hidden>→</span>
+            See how it works
+            <ArrowRight className="h-4 w-4" aria-hidden />
           </a>
         </div>
 

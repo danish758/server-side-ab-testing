@@ -1,3 +1,5 @@
+import { Check } from "lucide-react";
+
 const includedFeatures = [
   "Unlimited boards & projects",
   "Up to 25 team members",
@@ -38,8 +40,8 @@ export default function Pricing() {
             <ul className="mt-8 space-y-3">
               {includedFeatures.map((feature) => (
                 <li key={feature} className="flex items-center gap-3">
-                  <span className="flex h-5 w-5 items-center justify-center rounded-full bg-indigo-100 text-xs text-indigo-600">
-                    ✓
+                  <span className="flex h-5 w-5 items-center justify-center rounded-full bg-indigo-100 text-indigo-600">
+                    <Check className="h-3 w-3" strokeWidth={3} aria-hidden />
                   </span>
                   <span className="text-slate-700">{feature}</span>
                 </li>
