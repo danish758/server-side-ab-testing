@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Flowly — Project management that flows",
+  title: "Flowly - Project management that flows",
   description:
     "Flowly is the simple project management tool that keeps your team in sync, on time, and out of endless meetings.",
 };
