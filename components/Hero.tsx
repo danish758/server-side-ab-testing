@@ -32,7 +32,7 @@ export default function Hero({ ctaText, userId, variationId }: HeroProps) {
           calm, focused place.
         </p>
 
-        <div className="mt-10 flex items-center justify-center gap-4">
+        <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
           <CtaButton text={ctaText} userId={userId} variationId={variationId} />
           <a
             href="#features"
