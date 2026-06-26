@@ -1,11 +1,15 @@
-# Flowly — Server-Side A/B Testing with GrowthBook + Next.js
+# Server-Side A/B Testing — Next.js (App Router) + GrowthBook
 
-A fake-but-real-looking SaaS landing page that runs a **100% server-side**
-A/B test on the hero CTA button using **GrowthBook Cloud** via the
-**Flags SDK** (`flags` + `@flags-sdk/growthbook`) — GrowthBook's recommended
-Next.js App Router pattern. No client-side SDK, no flicker, no hydration swap.
+A demo that runs a **100% server-side** A/B test on a landing-page CTA using
+**GrowthBook Cloud** via the **Flags SDK** (`flags` + `@flags-sdk/growthbook`) —
+GrowthBook's recommended Next.js App Router pattern. **No client-side SDK, no
+flicker, no hydration swap:** the variant is decided on the server before any
+HTML is sent.
 
-**The experiment:** the hero CTA text.
+**🔗 Live demo: https://server-side-ab-testing.vercel.app/**
+
+The demo site is **Flowly**, a fake project-management SaaS landing page. The
+experiment swaps the hero CTA text:
 
 | Variation | CTA text |
 | --------- | -------- |
