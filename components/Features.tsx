@@ -1,21 +1,23 @@
+import { LayoutDashboard, Rocket, Zap } from "lucide-react";
+
 const features = [
   {
     title: "Visual boards",
     description:
       "Drag-and-drop kanban boards that update in real time, so everyone always knows what's next.",
-    icon: "🗂️",
+    Icon: LayoutDashboard,
   },
   {
     title: "Sprint planning",
     description:
       "Plan, estimate, and prioritize work in minutes. Flowly handles the math so you can focus on the work.",
-    icon: "🚀",
+    Icon: Rocket,
   },
   {
     title: "Automations",
     description:
       "Replace busywork with rules. Move cards, assign owners, and ping the right people automatically.",
-    icon: "⚡",
+    Icon: Zap,
   },
 ];
 
@@ -42,8 +44,8 @@ export default function Features() {
               key={feature.title}
               className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition hover:shadow-md"
             >
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-50 text-2xl">
-                {feature.icon}
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-50">
+                <feature.Icon className="h-6 w-6 text-indigo-500" aria-hidden />
               </div>
               <h3 className="mt-6 text-lg font-semibold text-slate-900">
                 {feature.title}

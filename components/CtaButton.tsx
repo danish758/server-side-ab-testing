@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Check } from "lucide-react";
 
 interface CtaButtonProps {
   text: string;
@@ -51,7 +52,7 @@ export default function CtaButton({
       }
     >
       {text}
-      {clicked && <span className="ml-2 text-indigo-100">✓</span>}
+      {clicked && <Check className="ml-2 h-4 w-4" aria-hidden />}
     </button>
   );
 }
